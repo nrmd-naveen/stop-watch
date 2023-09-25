@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Count Down Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-container">
+        <div class="input-container">
+            <div class="div1"><h2>Set Time Limit :</h2></div>
+            <div class="div2">
+                <form action="set" class="form">
+                    <input style="font-family: digital7;" type="number" maxlength="2" min="0" max="12" value="00" id="hour">
+                    <label for="hour">Hrs</label>
+                    <input style="font-family: digital7;" type="number" maxlength="2" min="0" max="60" value="02" id="min">
+                    <label for="min">Mins</label>
+                    <button class="set-button btn" id="set">Set</button>
+                </form>
+            </div>
+            
+        </div>
+        <div class="timer-container">
+            <h1 class="" id="timer">00:00:00</h1>
+        </div>
+        <div class="buttons">
+            <button id="start" class = "but start-button">Start  <i class="fa-solid fa-hourglass-start "></i></button>
+            <button id="stop" class = "but stop-button">Stop <i class="fa-lg fa-solid fa-stop"></i></button>
+            <button id="reset" class = "but reset-button">Reset<i class="fa-solid fa-arrows-rotate"></i></button>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+<script src="https://kit.fontawesome.com/eb7c27f75c.js" crossorigin="anonymous"></script>
+</html>

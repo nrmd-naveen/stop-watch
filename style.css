@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+body{
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Roboto";
+    user-select: none;
+}
+
+h1{
+    font-family: "digital7";
+    font-size: 45px;
+    color: rgb(69, 69, 69);
+    letter-spacing: 4vw;
+    
+}
+
+@font-face{
+    font-family: "digital7";
+    src: url(font/digital-7.ttf);
+}
+
+
+.background-container{
+    background-image: url("https://theawesomedaily.com/wp-content/uploads/2018/07/cool-backgrounds-feat-1.jpg");
+    background-size: cover;
+    background-color: rgba(69, 69, 69, 0.764);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.input-container{
+    background-color: rgba(252, 169, 142, 0);
+    height: 25%;
+    width: 70%;
+    margin: 0 5%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+
+.timer-container{
+    height: 17%;
+    width: 60%;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(255, 255, 255, 0.611);
+    border-radius: 0.5%;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(6, 23, 41, 0.45) 0px -5px 10px 0px inset;
+}
+.buttons{
+    height: 15%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    
+}
+
+.but{
+    height: 50%;
+    width: 50%;
+    margin: 0px 4%;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-style: solid;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+
+.but i{
+    position: relative;
+    right: -30px;
+}
+
+.but:hover{
+    background-color: rgba(255, 255, 255, 0.249);
+    transform: scale(1.05);
+}
+.flick{
+    background-color: rgba(255, 255, 255, 0.249);
+}
+.reset-button{
+    margin-left: 12%;
+}
+
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    color: #37066b;
+    font-size: 27px;
+}
+h2:hover{
+    color: rgb(2, 60, 110);
+    cursor: pointer;
+}
+#hour,#min{
+    width: 4.5vw;
+    height: 6vh;
+    background-color: #6b06692b;
+    font-size: 30px;
+    padding: 5px;
+    opacity: 80%;
+    text-align: center;
+    border-radius: 15px;
+    border-style: none;
+    margin-right: 0.5%;
+    font-weight: bold;
+
+}
+label{
+    font-size: 20px;
+    margin-right: 10%;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+
+}
+.set-button:hover{
+    background-color: rgba(255, 255, 255, 0.249);
+    transform: scale(1.05);
+}
+.set-button{
+    height: 50px;
+    width: 13%;
+    border-radius: 10px;
+    border-radius: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-style: solid;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+}
+.blink {
+    animation: blink-animation 0.8s steps(5, start) infinite;
+    -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+  }
+  @keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
+  @-webkit-keyframes blink-animation {
+    to {
+      visibility: hidden;
+    }
+  }
